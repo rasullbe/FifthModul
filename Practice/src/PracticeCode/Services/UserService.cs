@@ -1,26 +1,32 @@
-﻿using PracticeCode.Entities;
+﻿using PracticeCode.Dtos;
+using PracticeCode.Entities;
 
 namespace PracticeCode.Services;
 
 public class UserService : IUserService
 {
-    public Task<User> CreateUserAsync(User user)
+    public Guid CreateUser(UserCreateDto userCreateDto)
     {
-        
+                
     }
 
-    public Task DeleteUserAsync(UInt128 userId)
+    public bool DeleteUserAsync(Guid userId)
     {
-
+        throw new NotImplementedException();
     }
 
-    public User GetUserById(UInt128 userId)
+    public List<UserGetDto> GetAllUsersAsync()
     {
-        
+        throw new NotImplementedException();
     }
 
-    public Task<User> UpdateUserAsync(UInt128 userId, User user)
+    public UserGetDto? GetUserById(Guid userId)
     {
-        
+        throw new NotImplementedException();
+    }
+
+    public bool UpdateUserAsync(Guid userId, UserUpdateDto userUpdateDto)
+    {
+        throw new NotImplementedException();
     }
 }
